@@ -1,56 +1,109 @@
 <!DOCTYPE html>
 <html lang="hu">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="java.js"></script>
     <title>Document</title>
-</head>
-<body>
-    <div class="conatiner">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      <a class="navbar-brand" href="GeoCalc.html">GeoCalc</a>
+      <button
+        class="navbar-toggle"
+        type="button"
+        data-toggle="collapse"
+        data-target="#collapsible"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsible">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Háromszög</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Deltoid</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Gúla</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Téglatest</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="conatiner pt-3 pb-3 pr-5 pl-5">
+      <h1 class="bevezeto">
+        Szeretnéd kiszámítani egy síkidom, vagy test főbb jellemzőit?<br />Jobbhelyen
+        nem is járhatnál!
+      </h1>
+    </div>
+
+    <div class="conatiner-fluid">
+      <div class="conatiner-sm">
         <div class="row justify-content-center">
-            <div class="card">
-                <img class="card-img-top" src="Háromszög.jpg" alt="Háromszög">
-                <div class="card-body">
-                    <h4 class="card-title">Háromszög területe és kerülete</h4>
-                    <p class="card-text">Ha magad szeretnél számolni, íme a képletek: T = a*ma/2; K = a+b+c.<br>Ha inkább a gépre bíznád a számolást, katttints a kék gombbra!</p>
-                    <a href="#" class="btn btn-primary">Számológép</a>
-                </div>
+          <div class="card my-3 col-md-3" style="width: 14rem">
+            <img class="card-img-top" src="Háromszög.jpg" alt="Háromszög" />
+            <div class="card-body">
+              <h4 class="card-title">Háromszög területe és kerülete</h4>
+              <p class="card-text">
+                Ha magad szeretnél számolni, íme a képletek: T = a*ma/2; K =
+                a+b+c.<br />Ha inkább a gépre bíznád a számolást, katttints a
+                kék gombra!
+              </p>
+              <a href="#" class="btn">Számológép</a>
             </div>
-            <div class="card">
-                <img class="card-img-top" src="Deltoid.jpg" alt="Deltoid">
-                <div class="card-body">
-                    <h4 class="card-title">Deltoid területe és kerülete</h4>
-                    <p class="card-text">Ha magad szeretnél számolni, íme a képletek: T = e*f/2; K = 2(a+b).<br>Ha inkább a gépre bíznád a számolást, katttints a kék gombbra!</p>
-                    <a href="#" class="btn btn-primary">Számológép</a>
-                    </div>
+          </div>
+          <div class="card my-3 col-md-3" style="width: 14rem">
+            <img class="card-img-top" src="Deltoid.jpg" alt="Deltoid" />
+            <div class="card-body">
+              <h4 class="card-title">Deltoid területe és kerülete</h4>
+              <p class="card-text">
+                Ha magad szeretnél számolni, íme a képletek: T = e*f/2; K =
+                2(a+b).<br />Ha inkább a gépre bíznád a számolást, katttints a
+                kék gombra!
+              </p>
+              <a href="#" class="btn">Számológép</a>
             </div>
+          </div>
+          <div class="card my-3 col-md-3" style="width: 14rem">
+            <img class="card-img-top" src="Gúla.jpg" alt="Gúla" />
+            <div class="card-body">
+              <h4 class="card-title">Gúla felszíne és térfogata</h4>
+              <p class="card-text">
+                Ha magad szeretnél számolni, íme a képletek: A = T + P; V =
+                T*m/3.<br />Ha inkább a gépre bíznád a számolást, katttints a
+                kék gombra!
+              </p>
+              <a href="#" class="btn">Számológép</a>
+            </div>
+          </div>
+          <div class="card my-3 col-md-3" style="width: 14rem">
+            <img class="card-img-top" src="Téglatest.jpg" alt="Téglatest" />
+            <div class="card-body">
+              <h4 class="card-title">Téglatest felszíne és térfogata</h4>
+              <p class="card-text">
+                Ha magad szeretnél számolni, íme a képletek: A = 2(ab + bc +
+                ac); V = a*b*c.<br />Ha inkább a gépre bíznád a számolást,
+                katttints a kék gombra!
+              </p>
+              <a href="#" class="btn">Számológép</a>
+            </div>
+          </div>
         </div>
-            
-        <div class="row justify-content-center">    
-            <div class="card">
-                <img class="card-img-top" src="Gúla.jpg" alt="Gúla">
-                <div class="card-body">
-                    <h4 class="card-title">Gúla felszíne és térfogata</h4>
-                    <p class="card-text">Ha magad szeretnél számolni, íme a képletek: A = T + P; V = T*m/3.<br>Ha inkább a gépre bíznád a számolást, katttints a kék gombbra!</p>
-                    <a href="#" class="btn btn-primary">Számológép</a>
-                    </div>
-            </div>
-            <div class="card">
-                <img class="card-img-top" src="Téglatest.jpg" alt="Téglatest">
-                <div class="card-body">
-                    <h4 class="card-title">Téglatest felszíne és térfogata</h4>
-                    <p class="card-text">Ha magad szeretnél számolni, íme a képletek: A = 2(ab + bc + ac); V = a*b*c.<br>Ha inkább a gépre bíznád a számolást, katttints a kék gombbra!</p>
-                    <a href="#" class="btn btn-primary">Számológép</a>
-                    </div>
-                </div>
-            </div>
-   	    </div>
-</body>
+      </div>
+    </div>
+  </body>
 </html>
