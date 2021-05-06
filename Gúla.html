@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="java.js"></script>
+    <title>GeoCalc: Gúla</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="GeoCalc.html">GeoCalc</a>
+        <button
+          class="navbar-toggle"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsible"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsible">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="Haromszog.html">Háromszög</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Deltoid.html">Deltoid</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gúla</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Téglatest</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="conatiner pt-3 pb-3 pr-5 pl-5">
+            <h1 class="cím1">Gúla számológép</h1>
+        </div>
+        <div class="container">
+            <div class="card-deck">
+                <div class="card bg-white">
+                    <div class="card-body text-center">
+                        <h2>Felszín</h2>
+                        <form class="pt-5">
+                            <label for="alapT">A gúla alapjának területe:</label> <br>
+                            <input type="number" id="alapT" name="alapT">
+                            <label for="mertekegyseg"></label>
+                            <select id="mertekegyseg" name="mertekegyseg">
+                                <option value="nkm">négyzetkilométer</option>
+                                <option value="nm">négyzetméter</option>
+                                <option value="ndm">négyzetdeciméter</option>
+                                <option value="ncm" selected>négyzetcentiméter</option>
+                                <option value="nmm">négyzetmilliméter</option>
+                            </select> <br>
+                            <label for="palástT" class="pt-5">A gúla palástjának területe:</label> <br>
+                            <input type="number" id="palástT" name="palástT">
+                            <label for="mertekegyseg"></label>
+                            <select id="mertekegyseg" name="mertekegyseg">
+                                <option value="nkm">négyzetkilométer</option>
+                                <option value="nm">négyzetméter</option>
+                                <option value="ndm">négyzetdeciméter</option>
+                                <option value="ncm" selected>négyzetcentiméter</option>
+                                <option value="nmm">négyzetmilliméter</option>
+                            </select>
+                            <div>
+                                <h4>
+                                    <label for="eredmenyF" class="pt-5">Felszín</label>
+                                </h4>
+                                <div>
+                                    <input type="text" class="form-control" id="eredmenyF" disabled>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="card bg-white">
+                    <div class="card-body text-center">
+                        <h2>Térfogat</h2>
+                        <form class="pt-5">
+                            <label for="alapT">A gúla alapjának területe:</label> <br>
+                            <input type="number" id="alapT" name="alapT">
+                            <label for="mertekegyseg"></label>
+                            <select id="mertekegyseg" name="mertekegyseg">
+                                <option value="nkm">négyzetkilométer</option>
+                                <option value="nm">négyzetméter</option>
+                                <option value="ndm">négyzetdeciméter</option>
+                                <option value="ncm" selected>négyzetcentiméter</option>
+                                <option value="nmm">négyzetmilliméter</option>
+                            </select> <br>
+                            <label for="gulaM" class="pt-5">A gúla magassága:</label> <br>
+                            <input type="number" id="gulaM" name="gulaM">
+                            <label for="mertekegyseg"></label>
+                            <select id="mertekegyseg" name="mertekegyseg">
+                                <option value="km">kilométer</option>
+                                <option value="m">méter</option>
+                                <option value="dm">deciméter</option>
+                                <option value="cm" selected>centiméter</option>
+                                <option value="mm">milliméter</option>
+                            </select> <br>
+                            <div>
+                                <h4>
+                                    <label for="eredmenyK" class="pt-5">Kerület</label>
+                                </h4>
+                                <div>
+                                    <input type="text" class="form-control" id="eredmenyK" disabled>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
