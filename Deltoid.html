@@ -13,7 +13,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <script src="java.js"></script>
-    <title>GeoCalc: Háromszög</title>
+    <title>GeoCalc: Deltoid</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
@@ -29,7 +29,7 @@
         <div class="collapse navbar-collapse" id="collapsible">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#">Háromszög</a>
+              <a class="nav-link" href="Haromszog.html">Háromszög</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Deltoid</a>
@@ -42,11 +42,11 @@
             </li>
           </ul>
         </div>
-    </nav>
+      </nav>
 
-    <div class="container-fluid">
+      <div class="container-fluid">
         <div class="conatiner pt-3 pb-3 pr-5 pl-5">
-            <h1 class="cím1">Háromszög számológép</h1>
+            <h1 class="cím1">Deltoid számológép</h1>
         </div>
         <div class="container">
             <div class="card-deck">
@@ -54,8 +54,8 @@
                     <div class="card-body text-center">
                         <h2>Terület</h2>
                         <form class="pt-5">
-                            <label for="aoldal">"A" oldal hossza:</label> <br>
-                            <input type="number" id="aoldal" name="aoldal">
+                            <label for="eatlo">"E" átló hossza:</label> <br>
+                            <input type="number" id="eatlo" name="eatlo">
                             <label for="mertekegyseg"></label>
                             <select id="mertekegyseg" name="mertekegyseg">
                                 <option value="km">kilométer</option>
@@ -64,8 +64,8 @@
                                 <option value="cm" selected>centiméter</option>
                                 <option value="mm">milliméter</option>
                             </select> <br>
-                            <label for="amagasság" class="pt-5">"A" oldalhoz tartozó magasság:</label> <br>
-                            <input type="number" id="amagasság" name="amagasság">
+                            <label for="fatlo" class="pt-5">"F" átló hossza:</label> <br>
+                            <input type="number" id="fatlo" name="fatlo">
                             <label for="mertekegyseg"></label>
                             <select id="mertekegyseg" name="mertekegyseg">
                                 <option value="km">kilométer</option>
@@ -88,7 +88,7 @@
                 <div class="card bg-white">
                     <div class="card-body text-center">
                         <h2>Kerület</h2>
-                        <form class="pt-3">
+                        <form class="pt-5">
                             <label for="aoldal">"A" oldal hossza:</label> <br>
                             <input type="number" id="aoldal" name="aoldal">
                             <label for="mertekegyseg"></label>
@@ -99,18 +99,8 @@
                                 <option value="cm" selected>centiméter</option>
                                 <option value="mm">milliméter</option>
                             </select> <br>
-                            <label for="boldal" class="pt-3">"B" oldal hossza:</label> <br>
+                            <label for="boldal" class="pt-5">"B" oldal hossza:</label> <br>
                             <input type="number" id="boldal" name="boldal">
-                            <label for="mertekegyseg"></label>
-                            <select id="mertekegyseg" name="mertekegyseg">
-                                <option value="km">kilométer</option>
-                                <option value="m">méter</option>
-                                <option value="dm">deciméter</option>
-                                <option value="cm" selected>centiméter</option>
-                                <option value="mm">milliméter</option>
-                            </select> <br>
-                            <label for="coldal" class="pt-3">"C" oldal hossza:</label> <br>
-                            <input type="number" id="coldal" name="coldal">
                             <label for="mertekegyseg"></label>
                             <select id="mertekegyseg" name="mertekegyseg">
                                 <option value="km">kilométer</option>
