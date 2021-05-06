@@ -13,7 +13,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <script src="java.js"></script>
-    <title>GeoCalc: Gúla</title>
+    <title>GeoCalc: Téglatest</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-md bg-dark navbar-dark">
@@ -35,7 +35,7 @@
               <a class="nav-link" href="Deltoid.html">Deltoid</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Gúla</a>
+              <a class="nav-link" href="Gúla.html">Gúla</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Téglatest</a>
@@ -46,7 +46,7 @@
 
     <div class="container-fluid">
         <div class="conatiner pt-3 pb-3 pr-5 pl-5">
-            <h1 class="cím1">Gúla számológép</h1>
+            <h1 class="cím1">Téglatest számológép</h1>
         </div>
         <div class="container">
             <div class="card-deck">
@@ -54,25 +54,35 @@
                     <div class="card-body text-center">
                         <h2>Felszín</h2>
                         <form class="pt-5">
-                            <label for="alapT">A gúla alapjának területe:</label> <br>
-                            <input type="number" id="alapT" name="alapT">
+                            <label for="aoldal">"A" oldal hossza:</label> <br>
+                            <input type="number" id="aoldal" name="aoldal">
                             <label for="mertekegyseg"></label>
                             <select id="mertekegyseg" name="mertekegyseg">
-                                <option value="nkm">négyzetkilométer</option>
-                                <option value="nm">négyzetméter</option>
-                                <option value="ndm">négyzetdeciméter</option>
-                                <option value="ncm" selected>négyzetcentiméter</option>
-                                <option value="nmm">négyzetmilliméter</option>
+                                <option value="km">kilométer</option>
+                                <option value="m">méter</option>
+                                <option value="dm">deciméter</option>
+                                <option value="cm" selected>centiméter</option>
+                                <option value="mm">milliméter</option>
                             </select> <br>
-                            <label for="palástT" class="pt-5">A gúla palástjának területe:</label> <br>
-                            <input type="number" id="palástT" name="palástT">
+                            <label for="boldal">"B" oldal hossza:</label> <br>
+                            <input type="number" id="boldal" name="boldal">
                             <label for="mertekegyseg"></label>
                             <select id="mertekegyseg" name="mertekegyseg">
-                                <option value="nkm">négyzetkilométer</option>
-                                <option value="nm">négyzetméter</option>
-                                <option value="ndm">négyzetdeciméter</option>
-                                <option value="ncm" selected>négyzetcentiméter</option>
-                                <option value="nmm">négyzetmilliméter</option>
+                                <option value="km">kilométer</option>
+                                <option value="m">méter</option>
+                                <option value="dm">deciméter</option>
+                                <option value="cm" selected>centiméter</option>
+                                <option value="mm">milliméter</option>
+                            </select> <br>
+                            <label for="coldal">"C" oldal hossza:</label> <br>
+                            <input type="number" id="coldal" name="coldal">
+                            <label for="mertekegyseg"></label>
+                            <select id="mertekegyseg" name="mertekegyseg">
+                                <option value="km">kilométer</option>
+                                <option value="m">méter</option>
+                                <option value="dm">deciméter</option>
+                                <option value="cm" selected>centiméter</option>
+                                <option value="mm">milliméter</option>
                             </select>
                             <div>
                                 <h4>
@@ -89,18 +99,8 @@
                     <div class="card-body text-center">
                         <h2>Térfogat</h2>
                         <form class="pt-5">
-                            <label for="alapT">A gúla alapjának területe:</label> <br>
-                            <input type="number" id="alapT" name="alapT">
-                            <label for="mertekegyseg"></label>
-                            <select id="mertekegyseg" name="mertekegyseg">
-                                <option value="nkm">négyzetkilométer</option>
-                                <option value="nm">négyzetméter</option>
-                                <option value="ndm">négyzetdeciméter</option>
-                                <option value="ncm" selected>négyzetcentiméter</option>
-                                <option value="nmm">négyzetmilliméter</option>
-                            </select> <br>
-                            <label for="gulaM" class="pt-5">A gúla magassága:</label> <br>
-                            <input type="number" id="gulaM" name="gulaM">
+                            <label for="aoldal">"A" oldal hossza:</label> <br>
+                            <input type="number" id="aoldal" name="aoldal">
                             <label for="mertekegyseg"></label>
                             <select id="mertekegyseg" name="mertekegyseg">
                                 <option value="km">kilométer</option>
@@ -109,9 +109,29 @@
                                 <option value="cm" selected>centiméter</option>
                                 <option value="mm">milliméter</option>
                             </select> <br>
+                            <label for="boldal">"B" oldal hossza:</label> <br>
+                            <input type="number" id="boldal" name="boldal">
+                            <label for="mertekegyseg"></label>
+                            <select id="mertekegyseg" name="mertekegyseg">
+                                <option value="km">kilométer</option>
+                                <option value="m">méter</option>
+                                <option value="dm">deciméter</option>
+                                <option value="cm" selected>centiméter</option>
+                                <option value="mm">milliméter</option>
+                            </select> <br>
+                            <label for="coldal">"C" oldal hossza:</label> <br>
+                            <input type="number" id="coldal" name="coldal">
+                            <label for="mertekegyseg"></label>
+                            <select id="mertekegyseg" name="mertekegyseg">
+                                <option value="km">kilométer</option>
+                                <option value="m">méter</option>
+                                <option value="dm">deciméter</option>
+                                <option value="cm" selected>centiméter</option>
+                                <option value="mm">milliméter</option>
+                            </select>
                             <div>
                                 <h4>
-                                    <label for="eredmenyK" class="pt-5">Térfogat</label>
+                                    <label for="eredmenyK" class="pt-5">Kerület</label>
                                 </h4>
                                 <div>
                                     <input type="text" class="form-control" id="eredmenyK" disabled>
