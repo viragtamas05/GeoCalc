@@ -12,7 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css" />
-    <script src="java.js"></script>
+    <script src="Teglatest.js"></script>
     <title>GeoCalc: Téglatest</title>
 </head>
 <body>
@@ -54,8 +54,8 @@
                     <div class="card-body text-center">
                         <h2>Felszín</h2>
                         <form class="pt-5">
-                            <label for="aoldal">"A" oldal hossza:</label> <br>
-                            <input type="number" id="aoldal" name="aoldal">
+                            <label for="aoldalA">"A" oldal hossza:</label> <br>
+                            <input oninput="szamolA()" type="number" id="aoldalA" name="aoldalA">
                             <label for="mertekegyseg"></label>
                             <select id="mertekegyseg" name="mertekegyseg">
                                 <option value="km">kilométer</option>
@@ -64,8 +64,8 @@
                                 <option value="cm" selected>centiméter</option>
                                 <option value="mm">milliméter</option>
                             </select> <br>
-                            <label for="boldal">"B" oldal hossza:</label> <br>
-                            <input type="number" id="boldal" name="boldal">
+                            <label for="boldalA">"B" oldal hossza:</label> <br>
+                            <input oninput="szamolA()" type="number" id="boldalA" name="boldalA">
                             <label for="mertekegyseg"></label>
                             <select id="mertekegyseg" name="mertekegyseg">
                                 <option value="km">kilométer</option>
@@ -74,8 +74,8 @@
                                 <option value="cm" selected>centiméter</option>
                                 <option value="mm">milliméter</option>
                             </select> <br>
-                            <label for="coldal">"C" oldal hossza:</label> <br>
-                            <input type="number" id="coldal" name="coldal">
+                            <label for="coldalA">"C" oldal hossza:</label> <br>
+                            <input oninput="szamolA()" type="number" id="coldalA" name="coldalA">
                             <label for="mertekegyseg"></label>
                             <select id="mertekegyseg" name="mertekegyseg">
                                 <option value="km">kilométer</option>
@@ -99,8 +99,8 @@
                     <div class="card-body text-center">
                         <h2>Térfogat</h2>
                         <form class="pt-5">
-                            <label for="aoldal">"A" oldal hossza:</label> <br>
-                            <input type="number" id="aoldal" name="aoldal">
+                            <label for="aoldalV">"A" oldal hossza:</label> <br>
+                            <input oninput="szamolV()" type="number" id="aoldalV" name="aoldalV">
                             <label for="mertekegyseg"></label>
                             <select id="mertekegyseg" name="mertekegyseg">
                                 <option value="km">kilométer</option>
@@ -109,8 +109,8 @@
                                 <option value="cm" selected>centiméter</option>
                                 <option value="mm">milliméter</option>
                             </select> <br>
-                            <label for="boldal">"B" oldal hossza:</label> <br>
-                            <input type="number" id="boldal" name="boldal">
+                            <label for="boldalV">"B" oldal hossza:</label> <br>
+                            <input oninput="szamolV()" type="number" id="boldalV" name="boldalV">
                             <label for="mertekegyseg"></label>
                             <select id="mertekegyseg" name="mertekegyseg">
                                 <option value="km">kilométer</option>
@@ -119,8 +119,8 @@
                                 <option value="cm" selected>centiméter</option>
                                 <option value="mm">milliméter</option>
                             </select> <br>
-                            <label for="coldal">"C" oldal hossza:</label> <br>
-                            <input type="number" id="coldal" name="coldal">
+                            <label for="coldalV">"C" oldal hossza:</label> <br>
+                            <input oninput="szamolV()" type="number" id="coldalV" name="coldalV">
                             <label for="mertekegyseg"></label>
                             <select id="mertekegyseg" name="mertekegyseg">
                                 <option value="km">kilométer</option>
@@ -131,10 +131,10 @@
                             </select>
                             <div>
                                 <h4>
-                                    <label for="eredmenyK" class="pt-5">Kerület</label>
+                                    <label for="eredmenyT" class="pt-5">Térfogat</label>
                                 </h4>
                                 <div>
-                                    <input type="text" class="form-control" id="eredmenyK" disabled>
+                                    <input type="text" class="form-control" id="eredmenyT" disabled>
                                 </div>
                             </div>
                         </form>

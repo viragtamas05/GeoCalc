@@ -12,7 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css" />
-    <script src="java.js"></script>
+    <script src="Deltoid.js"></script>
     <title>GeoCalc: Deltoid</title>
 </head>
 <body>
@@ -55,7 +55,7 @@
                         <h2>Terület</h2>
                         <form class="pt-5">
                             <label for="eatlo">"E" átló hossza:</label> <br>
-                            <input type="number" id="eatlo" name="eatlo">
+                            <input oninput="szamolT()" type="number" id="eatlo" name="eatlo">
                             <label for="mertekegyseg"></label>
                             <select id="mertekegyseg" name="mertekegyseg">
                                 <option value="km">kilométer</option>
@@ -65,7 +65,7 @@
                                 <option value="mm">milliméter</option>
                             </select> <br>
                             <label for="fatlo" class="pt-5">"F" átló hossza:</label> <br>
-                            <input type="number" id="fatlo" name="fatlo">
+                            <input oninput="szamolT()" type="number" id="fatlo" name="fatlo">
                             <label for="mertekegyseg"></label>
                             <select id="mertekegyseg" name="mertekegyseg">
                                 <option value="km">kilométer</option>
@@ -90,7 +90,7 @@
                         <h2>Kerület</h2>
                         <form class="pt-5">
                             <label for="aoldal">"A" oldal hossza:</label> <br>
-                            <input type="number" id="aoldal" name="aoldal">
+                            <input oninput="szamolK()" type="number" id="aoldal" name="aoldal">
                             <label for="mertekegyseg"></label>
                             <select id="mertekegyseg" name="mertekegyseg">
                                 <option value="km">kilométer</option>
@@ -100,7 +100,7 @@
                                 <option value="mm">milliméter</option>
                             </select> <br>
                             <label for="boldal" class="pt-5">"B" oldal hossza:</label> <br>
-                            <input type="number" id="boldal" name="boldal">
+                            <input oninput="szamolK()" type="number" id="boldal" name="boldal">
                             <label for="mertekegyseg"></label>
                             <select id="mertekegyseg" name="mertekegyseg">
                                 <option value="km">kilométer</option>
