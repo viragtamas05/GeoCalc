@@ -12,7 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css" />
-    <script src="java.js"></script>
+    <script src="Haromszog.js"></script>
     <title>GeoCalc: Háromszög</title>
 </head>
 <body>
@@ -54,8 +54,8 @@
                     <div class="card-body text-center">
                         <h2>Terület</h2>
                         <form class="pt-5">
-                            <label for="aoldal">"A" oldal hossza:</label> <br>
-                            <input type="number" id="aoldal" name="aoldal">
+                            <label for="aoldalT">"A" oldal hossza:</label> <br>
+                            <input oninput="szamolT()" type="number" id="aoldalT" name="aoldalT">
                             <label for="mertekegyseg"></label>
                             <select id="mertekegyseg" name="mertekegyseg">
                                 <option value="km">kilométer</option>
@@ -65,7 +65,7 @@
                                 <option value="mm">milliméter</option>
                             </select> <br>
                             <label for="amagasság" class="pt-5">"A" oldalhoz tartozó magasság:</label> <br>
-                            <input type="number" id="amagasság" name="amagasság">
+                            <input oninput="szamolT()" type="number" id="amagasság" name="amagasság">
                             <label for="mertekegyseg"></label>
                             <select id="mertekegyseg" name="mertekegyseg">
                                 <option value="km">kilométer</option>
@@ -89,8 +89,8 @@
                     <div class="card-body text-center">
                         <h2>Kerület</h2>
                         <form class="pt-3">
-                            <label for="aoldal">"A" oldal hossza:</label> <br>
-                            <input type="number" id="aoldal" name="aoldal">
+                            <label for="aoldalK">"A" oldal hossza:</label> <br>
+                            <input oninput="szamolK()" type="number" id="aoldalK" name="aoldalK">
                             <label for="mertekegyseg"></label>
                             <select id="mertekegyseg" name="mertekegyseg">
                                 <option value="km">kilométer</option>
@@ -99,8 +99,8 @@
                                 <option value="cm" selected>centiméter</option>
                                 <option value="mm">milliméter</option>
                             </select> <br>
-                            <label for="boldal" class="pt-3">"B" oldal hossza:</label> <br>
-                            <input type="number" id="boldal" name="boldal">
+                            <label for="boldalK" class="pt-3">"B" oldal hossza:</label> <br>
+                            <input oninput="szamolK()" type="number" id="boldalK" name="boldalK">
                             <label for="mertekegyseg"></label>
                             <select id="mertekegyseg" name="mertekegyseg">
                                 <option value="km">kilométer</option>
@@ -109,8 +109,8 @@
                                 <option value="cm" selected>centiméter</option>
                                 <option value="mm">milliméter</option>
                             </select> <br>
-                            <label for="coldal" class="pt-3">"C" oldal hossza:</label> <br>
-                            <input type="number" id="coldal" name="coldal">
+                            <label for="coldalK" class="pt-3">"C" oldal hossza:</label> <br>
+                            <input oninput="szamolK()" type="number" id="coldalK" name="coldalK">
                             <label for="mertekegyseg"></label>
                             <select id="mertekegyseg" name="mertekegyseg">
                                 <option value="km">kilométer</option>

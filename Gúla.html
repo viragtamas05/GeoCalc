@@ -12,7 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css" />
-    <script src="java.js"></script>
+    <script src="Gúla.js"></script>
     <title>GeoCalc: Gúla</title>
 </head>
 <body>
@@ -54,8 +54,8 @@
                     <div class="card-body text-center">
                         <h2>Felszín</h2>
                         <form class="pt-5">
-                            <label for="alapT">A gúla alapjának területe:</label> <br>
-                            <input type="number" id="alapT" name="alapT">
+                            <label for="alapTA">A gúla alapjának területe:</label> <br>
+                            <input oninput="szamolA()" type="number" id="alapTA" name="alapTA">
                             <label for="mertekegyseg"></label>
                             <select id="mertekegyseg" name="mertekegyseg">
                                 <option value="nkm">négyzetkilométer</option>
@@ -64,8 +64,8 @@
                                 <option value="ncm" selected>négyzetcentiméter</option>
                                 <option value="nmm">négyzetmilliméter</option>
                             </select> <br>
-                            <label for="palástT" class="pt-5">A gúla palástjának területe:</label> <br>
-                            <input type="number" id="palástT" name="palástT">
+                            <label for="palástTA" class="pt-5">A gúla palástjának területe:</label> <br>
+                            <input oninput="szamolA()" type="number" id="palástTA" name="palástTA">
                             <label for="mertekegyseg"></label>
                             <select id="mertekegyseg" name="mertekegyseg">
                                 <option value="nkm">négyzetkilométer</option>
@@ -89,8 +89,8 @@
                     <div class="card-body text-center">
                         <h2>Térfogat</h2>
                         <form class="pt-5">
-                            <label for="alapT">A gúla alapjának területe:</label> <br>
-                            <input type="number" id="alapT" name="alapT">
+                            <label for="alapTV">A gúla alapjának területe:</label> <br>
+                            <input oninput="szamolV()" type="number" id="alapTV" name="alapTV">
                             <label for="mertekegyseg"></label>
                             <select id="mertekegyseg" name="mertekegyseg">
                                 <option value="nkm">négyzetkilométer</option>
@@ -99,8 +99,8 @@
                                 <option value="ncm" selected>négyzetcentiméter</option>
                                 <option value="nmm">négyzetmilliméter</option>
                             </select> <br>
-                            <label for="gulaM" class="pt-5">A gúla magassága:</label> <br>
-                            <input type="number" id="gulaM" name="gulaM">
+                            <label for="gulaMV" class="pt-5">A gúla magassága:</label> <br>
+                            <input oninput="szamolV()" type="number" id="gulaMV" name="gulaMV">
                             <label for="mertekegyseg"></label>
                             <select id="mertekegyseg" name="mertekegyseg">
                                 <option value="km">kilométer</option>
@@ -111,10 +111,10 @@
                             </select> <br>
                             <div>
                                 <h4>
-                                    <label for="eredmenyK" class="pt-5">Térfogat</label>
+                                    <label for="eredmenyT" class="pt-5">Térfogat</label>
                                 </h4>
                                 <div>
-                                    <input type="text" class="form-control" id="eredmenyK" disabled>
+                                    <input type="text" class="form-control" id="eredmenyT" disabled>
                                 </div>
                             </div>
                         </form>
