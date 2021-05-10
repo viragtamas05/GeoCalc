@@ -3,7 +3,7 @@ function szamolT() {
     var fatlo = parseInt(document.getElementById("fatlo").value);
     
     var terulet = eatlo * fatlo / 2;
-    document.getElementById("eredmenyT").value = terulet + " cm2";  
+    document.getElementById("eredmenyT").value = terulet + " cm2";
 
 }
 
